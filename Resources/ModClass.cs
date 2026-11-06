@@ -254,18 +254,15 @@ namespace CustomizableAbilities
             if (hooksSubscribed)
                 UnsubscribeHooks();
 
-            Log("Disabled");
+            //Log("Disabled");
         }
         public void EnableMod()
         {
-            // ЕСЛИ ХУКИ УЖЕ ВИСЯТ (НАПРИМЕР, МОД БЫЛ ВЫКЛЮЧЕН ПРИ ЗАПУСКЕ ИГРЫ),
-            // СНАЧАЛА СНИМАЕМ ИХ, ЧТОБЫ НЕ ПОДПИСАТЬСЯ ДВАЖДЫ
-            // IL-ХУКИ ПРИ ЭТОМ ПЕРЕПРИМЕНЯЮТСЯ УЖЕ С ВКЛЮЧЁННЫМ МОДОМ
             if (hooksSubscribed)
                 UnsubscribeHooks();
             SubscribeHooks();
 
-            Log("Enabled");
+            //Log("Enabled");
         }
         #endregion ВКЛ/ВЫКЛ МОД
 
